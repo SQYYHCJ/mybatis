@@ -1,0 +1,9 @@
+ch02-hello-mybatis
+实现步骤
+1新建的student表
+2加入maven的mybatis坐标
+3创建实体类，student保存表中的数据
+4创建持久层的dao接口，定义操作数据库的方法
+5创建一个mybatis使用的配置文件
+6创建mybatis的主配置文件
+7创建爱你使用mybatis类

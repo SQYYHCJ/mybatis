@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--约束文件，用于验证-->
+
+<!--namespace命名空寂爱你，要求使用dao接口的全限定名称-->
+<mapper namespace="top.sqyy.dao.StudentDao">
+    <select id="selectStudents" resultType="top.sqyy.domain.Student">
+        select * from student order by id
+    </select>
+
+    <insert id="insertStudent">
+        insert into student values (#{id},#{name},#{email},#{age})
+    </insert>
+</mapper>
